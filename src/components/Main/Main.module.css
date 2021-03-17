@@ -1,0 +1,85 @@
+.ButtonWrapper {
+  text-align: right;
+  margin-top: 30px;
+}
+
+.ButtonWrapper button {
+  font-family: 'ALK Life', sans-serif;
+  background-color: rgb(245, 205, 0);
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.ButtonWrapper button:hover {
+  background-color: rgb(248, 221, 88);
+}
+
+.TableWrapper {
+  display: inline-block;
+  vertical-align: middle;
+  width: 40%;
+  padding: 20px 10px;
+  background-color: rgb(248, 242, 233);
+}
+.TableWrapper table {
+  width: 100%;
+  text-align: center;
+}
+.TableWrapper thead {
+  font-size: 20px;
+  font-family: 'ALK Rounded Nusx Med', sans-serif;
+}
+.TableWrapper tr {
+  padding: 5px;
+}
+.TableWrapper tbody tr:hover {
+  background-color: rgb(209, 250, 250);
+  transition: 1s;
+}
+
+.TableWrapper tbody {
+  font-size: 18px;
+  font-family: 'ALK Rounded Nusx Med', sans-serif;
+}
+
+.TableWrapper button {
+  background-color: rgb(246, 94, 64);
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-family: 'ALK Life', sans-serif;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+.TableWrapper button:hover {
+  background-color: rgb(253, 121, 95);
+  color: #000;
+}
+
+.ChartWrapper {
+  display: inline-block;
+  width: 60%;
+  vertical-align: middle;
+}
+
+.FormError {
+  text-align: center;
+  margin-bottom: 30px;
+  color: red;
+}
+
+.MessageBox{
+  padding: 20px;
+  margin-top: 30px;
+  text-align: center;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.MessageBox:hover{
+  opacity: 0.7;
+}
+.LogInMessage{
+  text-align: center;
+  margin-top: 100px;
+}

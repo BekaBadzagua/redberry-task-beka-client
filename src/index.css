@@ -11,3 +11,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+li {
+  font-family: 'ALK Life', sans-serif;
+  /* font-family: 'ALK Rounded Nusx Med', sans-serif; */
+}
+
+body {
+  background-color: #e8e8e8;
+}

@@ -1,0 +1,53 @@
+.Modal {
+  width: 500px;
+  overflow: hidden;
+  z-index: 100;
+  position: fixed;
+  top: 20%;
+  left: calc(50% - 250px);
+}
+.Modal header span {
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px;
+}
+
+.MediumModal {
+  border-radius: 10px;
+  font-family: 'ALK Rounded Nusx Med', sans-serif;
+}
+.MediumModal label {
+  font-family: 'ALK Rounded Nusx Med', sans-serif;
+  margin-right: 20px;
+  font-weight: 100;
+}
+.MediumModal header {
+  background-color: #ff7b00;
+  text-align: right;
+}
+.MediumModal > div {
+  background-color: #fee895;
+  color: black;
+  padding: 20px;
+}
+.MediumModal > div h1 {
+  color: black;
+}
+.MediumModal footer {
+  background-color: #ff5100;
+  min-height: 40px;
+  text-align: right;
+}
+.MediumModal footer button {
+  margin: 10px;
+  border-radius: 10px;
+  padding: 7px 15px;
+  background-color: #cefbff;
+  color: #000;
+  font-family: 'ALK Life', sans-serif;
+  transition: 0.3s;
+}
+.MediumModal footer button:hover {
+  background-color: rgb(95, 207, 251);
+}

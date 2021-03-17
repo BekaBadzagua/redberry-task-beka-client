@@ -1,0 +1,21 @@
+{
+  "home": "Home",
+  "Name": "Name",
+  "Email": "Email",
+  "sign in": "Sign In",
+  "sign up": "Sign Up",
+  "create account": "Create Account",
+  "password": "Password",
+  "please log in": "Please Log in into your Account",
+  "add": "Add",
+  "delete": "Delete",
+  "date": "Date",
+  "weight": "Weight",
+  "exit": "Exit",
+  "weight kg": "Weight (kg)",
+  "you lost":"You lost",
+  "you gained":"You gained",
+  "kilograms":"kilograms",
+  "please add data":"Please add data",
+  "data is in a wrong format":"Data is in a wrong format."
+}

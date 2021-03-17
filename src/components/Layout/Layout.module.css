@@ -1,0 +1,48 @@
+.TopBar {
+  background-color: rgb(111, 180, 63);
+  padding: 10px 0;
+}
+.logoWrapper {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-color: rgb(189, 243, 184);
+  padding: 5px;
+  border-radius: 15px;
+}
+.logoWrapper img {
+  width: 100%;
+}
+.NavigationWrapper {
+  width: calc(100% - 100px);
+  text-align: right;
+  display: inline-block;
+  color: #fff;
+}
+
+.NavigationWrapper a {
+  color: #fff;
+  font-size: 20px;
+}
+.NavigationWrapper li {
+  display: inline-block;
+}
+.Exit:hover,
+.NavigationWrapper a:hover {
+  color: rgb(0, 247, 255);
+}
+.NavigationWrapper a::after {
+  content: '|';
+  font-size: 26;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: #fff;
+}
+.NavigationWrapper a:last-child::after {
+  content: '';
+}
+
+.Exit {
+  font-size: 20px;
+  cursor: pointer;
+}

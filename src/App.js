@@ -1,23 +1,25 @@
-import logo from './logo.svg';
+import { Switch, Route, Redirect } from 'react-router';
+import Main from './components/Main/Main';
+import SignIn from './components/Auth/SignIn';
+import SignUp from './components/Auth/SignUp';
+import Layout from './components/Layout/Layout';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import 'alk-life';
+import 'alk-rounded-nusx-med';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Layout>
+        <Switch>
+          <Route path="/signIn" component={SignIn} />
+          <Route path="/signUp" component={SignUp} />
+          <Route exact path="/" component={Main} />
+          <Redirect to="/" />
+        </Switch>
+      </Layout>
     </div>
   );
 }

@@ -1,13 +1,41 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import { BrowserRouter } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
+import { createStore, applyMiddleware, compose, combineReducers } from 'redux';
+import { Provider } from 'react-redux';
+import thunk from 'redux-thunk';
+import App from './App';
+import './index.css';
+import './i18n';
+
+import authReducer from './store/reducers/auth';
+import weightReducer from './store/reducers/weight';
+
+// For google chrome extention
+const composeEnhancers =
+  process.env.NODE_ENV === 'development'
+    ? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__
+    : null || compose;
+
+const rootReducer = combineReducers({
+  auth: authReducer,
+  weight: weightReducer,
+});
+
+const store = createStore(
+  rootReducer,
+  composeEnhancers(applyMiddleware(thunk))
+);
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Provider store={store}>
+    <BrowserRouter>
+      <Suspense fallback="Loading">
+        <App />
+      </Suspense>
+    </BrowserRouter>
+  </Provider>,
   document.getElementById('root')
 );
 

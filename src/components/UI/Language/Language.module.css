@@ -1,0 +1,23 @@
+.Language{
+    text-align: right;
+    padding-top: 15px;
+}
+.Language button{
+    background-color: transparent;
+    padding: 2px 5px;
+    border: 2px solid #ffffff;
+    border-radius:5px;
+    color: #ffffff;
+    margin: 0 5px;
+    transition: 0.3s;
+}
+.Language button:hover{
+    background-color: #c4eeff;
+    cursor: pointer;
+    color: black;
+}
+.Language button:focus{
+    outline: none;
+}
+
+
